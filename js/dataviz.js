@@ -68,7 +68,7 @@ window.addEventListener('resize', function(event){
 });
 
 async function callIss() {
-  let response = await fetch("http://api.open-notify.org/iss-now.json");
+  let response = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
   if (response.ok) {
     // if HTTP-status is 200-299
     // get the response body and parse it => json object
