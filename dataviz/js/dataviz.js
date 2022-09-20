@@ -155,11 +155,11 @@ async function callIss() {
       //console.log("dans les plus");
       latlngs.push([lat, lon]);
       // create a red polyline from an array of LatLng points => for the trajectory
-      L.polyline(latlngs, { color: "red" }).addTo(map);
+      L.polyline(latlngs, {color: "red"}).addTo(map);
     } else if (lon < 0) {
       //console.log("dans les moins");
       latlngs2.push([lat, lon]);
-      L.polyline(latlngs2, { color: "red" }).addTo(map);
+      L.polyline(latlngs2, {color: "red"}).addTo(map);
     }
     setTimeout(callIss, 5000);
   } else {
